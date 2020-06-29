@@ -1,5 +1,11 @@
 package br.com.zup.crud_cliente.repositories;
 
-public interface UserRepository {
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.zup.crud_cliente.models.User;
+
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
 
 }
